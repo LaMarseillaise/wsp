@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, div, section, header, main {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-top: 16px;
+}
+
+.full-page {
+  min-height: 100vh;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.info-section {
+  padding: 36px 20%;
+  text-align: center;
+}
+
+.info-section p {
+  color: #333;
+}
+
+.technology-card {
+  min-height: 100px;
+  text-align: left;
+  margin: 10px;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #eff;
+}
+
+#headline {
+  color: #ddd;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/Sunlit Path 1920x1080.jpg");
+}
+
+#headline div {
+  position: absolute;
+  bottom: 24%;
+  left: 12%;
+}
+
+#about {
+  background-color: white;
+  padding-top: 80px;
+}
+
+#technologies {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+#contribute {
+  position: relative;
+  background-color: #eee;
+}
+
+#wsp-logo {
+  position: absolute;
+  bottom: 0;
+}
