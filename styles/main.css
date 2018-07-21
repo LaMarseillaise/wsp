@@ -40,7 +40,7 @@ p {
   background-color: #eff;
 }
 
-#headline {
+#title-card {
   color: #ddd;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,10 +48,18 @@ p {
   background-image: url("../images/Sunlit Path 1920x1080.jpg");
 }
 
-#headline div {
+#main-title {
   position: absolute;
-  bottom: 24%;
-  left: 12%;
+  bottom: 16%;
+  left: 8%;
+  font-size: 24px;
+}
+
+#dialogue-quote {
+  position: absolute;
+  top: 10%;
+  right: 4%;
+  width: 256px;
 }
 
 #about {
