@@ -4,13 +4,14 @@
   box-sizing: border-box;
 }
 
-body, div, section, header, main {
+body, div, section, header, main, a {
   display: flex;
   flex-direction: column;
 }
 
 p {
-  margin-top: 16px;
+  font-size: 1.20em;
+  line-height: 1.75em;
 }
 
 .full-page {
@@ -27,17 +28,37 @@ p {
   text-align: center;
 }
 
+.info-section h2 {
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
 .info-section p {
+  margin-top: 16px;
+  margin-bottom: 16px;
   color: #333;
 }
 
 .technology-card {
-  min-height: 100px;
-  text-align: left;
+  vertical-align: middle;
   margin: 10px;
   padding: 16px;
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: #eff;
+  text-decoration: none;
+  color: #333;
+}
+
+.technology-card:hover {
+  background-color: #cff;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
 }
 
 #title-card {
@@ -64,7 +85,6 @@ p {
 
 #about {
   background-color: white;
-  padding-top: 80px;
 }
 
 #technologies {
@@ -72,8 +92,8 @@ p {
   margin-bottom: 40px;
   background-color: white;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
 }
 
 #contribute {
