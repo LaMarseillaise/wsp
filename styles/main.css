@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body, div, section, header, main, a {
+body, div, section, header, main {
   display: flex;
   flex-direction: column;
 }
@@ -12,6 +12,16 @@ body, div, section, header, main, a {
 p {
   font-size: 1.20em;
   line-height: 1.75em;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.20em;
+  line-height: 1.5em;
+  background-color: #eee;
+  color: #555;
+  margin: 24px;
+  padding: 24px;
 }
 
 .full-page {
@@ -24,7 +34,6 @@ p {
 }
 
 .info-section {
-  padding: 36px 20%;
   text-align: center;
 }
 
@@ -51,14 +60,7 @@ p {
 
 .technology-card:hover {
   background-color: #cff;
-}
-
-.modal {
-  display: none;
-}
-
-.modal.is-open {
-  display: block;
+  cursor: pointer;
 }
 
 #title-card {
@@ -85,6 +87,7 @@ p {
 
 #about {
   background-color: white;
+  padding: 36px 20%;
 }
 
 #technologies {
@@ -104,4 +107,43 @@ p {
 #wsp-logo {
   position: absolute;
   bottom: 0;
+}
+
+
+/* Modal */
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  max-width: 960px;
+  max-height: 100vh;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+.modal-title {
+  margin: 16px;
+  text-align: center;
+}
+
+.modal-content p {
+  color: #333;
+  margin: 16px;
 }
