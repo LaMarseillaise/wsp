@@ -173,6 +173,10 @@ blockquote {
   width: 100%;
 }
 
+.swiper-wrapper {
+  align-items: center;
+}
+
 .swiper-slide {
   padding: 60px;
   text-align: center;
