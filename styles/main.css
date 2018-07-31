@@ -20,7 +20,6 @@ blockquote {
   line-height: 1.5em;
   background-color: #eee;
   color: #555;
-  margin: 24px;
   padding: 24px;
 }
 
@@ -38,29 +37,14 @@ blockquote {
 }
 
 .info-section h2 {
-  margin-top: 36px;
-  margin-bottom: 16px;
 }
 
 .info-section p {
-  margin-top: 16px;
-  margin-bottom: 16px;
   color: #333;
 }
 
-.technology-card {
-  vertical-align: middle;
-  margin: 10px;
-  padding: 16px;
-  border-radius: 5px;
-  background-color: #eff;
-  text-decoration: none;
-  color: #333;
-}
-
-.technology-card:hover {
-  background-color: #cff;
-  cursor: pointer;
+.info-section > * {
+  margin: 16px;
 }
 
 #title-card {
@@ -90,15 +74,6 @@ blockquote {
   padding: 36px 20%;
 }
 
-#technologies {
-  margin-top: 24px;
-  margin-bottom: 40px;
-  background-color: white;
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 33% 33% 33%;
-}
-
 #contribute {
   position: relative;
   background-color: #eee;
@@ -106,6 +81,7 @@ blockquote {
 
 #wsp-logo {
   position: absolute;
+  margin: 0px;
   bottom: 0;
 }
 
@@ -116,7 +92,7 @@ blockquote {
 }
 
 .modal.is-open {
-  display: block;
+  display: flex;
 }
 
 .modal-overlay {
@@ -129,6 +105,7 @@ blockquote {
 }
 
 .modal-container {
+  position: relative;
   background-color: #fff;
   padding: 20px;
   margin: 20px;
@@ -138,12 +115,54 @@ blockquote {
   overflow-y: auto;
 }
 
-.modal-title {
+.modal-content > * {
   margin: 16px;
+}
+
+.modal-content h2, .modal-content h3 {
   text-align: center;
 }
 
 .modal-content p {
   color: #333;
-  margin: 16px;
+}
+
+.modal-content img {
+  margin: auto;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-style: none;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  outline: none;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+}
+
+
+/* Button Set */
+.button-set {
+  display: block;
+}
+
+.button-set-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 24px;
+  border: 1px solid white;
+  background-color: #eff;
+  outline: none;
+}
+
+.button-set-button:hover {
+  background-color: #cff;
+  cursor: pointer;
 }
