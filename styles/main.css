@@ -175,6 +175,7 @@ blockquote {
 
 .swiper-slide {
   padding: 60px;
+  text-align: center;
 }
 
 .swiper-slide > p {
