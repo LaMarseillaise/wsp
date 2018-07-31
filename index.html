@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <link href="images/WSPfavicon.png" rel="shortcut icon" type="image/x-icon" />
     <script type="text/javascript" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     <script type="text/javascript" src="scripts/initializers.js"></script>
   </head>
 
   <body>
-    <main>
+    <main class="column">
       <header id="title-card" class="full-page">
         <div class="center" id="main-title">
           <h1>
@@ -27,7 +29,95 @@
         </div>
       </header>
 
-      <section id="about">
+      <section id="about" class="column">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                The greatest problem our society faces isn't climate change, gun violence, political corruption, terrorism, or racism...
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                It is an inability to engage in productive dialogue, which undermines our ability to address all the other problems.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                Dialogue should be the wellspring of consensus and action in society, but we see it failing repeatedly at every level, from daily life to international relations.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                Disagreements routinely degenerate into verbal pushing and shoving that exasperates those engaged while resolving nothing.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                Democracy itself is now being threatened by this.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                Does anyone question the need to move beyond it?
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                A senior information systems engineer and philosopher focused on this problem for years and came up with a plan to move us beyond it.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                This effort as a whole is called "Walking the Sunlit Path" in honor of the ancient Greek philosopher Plato.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                The plan combines a systems engineering approach with several existing technologies, as well as philosophical depth to provide a mechanism for “collective intelligence.”
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                The central technology is called a "dialogue convergence engine."
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                At a time when the credibility of all sources of information is in question, this technology could produce an optimally credible consensus on critical issues in a process that is fully transparent, fully inclusive, and open-ended.
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                <i>"In order to create a peaceful century, this must be a century of dialogue."</i>
+                <br>
+                - Dalai Lama
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <p>
+                Please use the links on this page to explore key aspects of this plan.
+              If you're interested in becoming involved, please email <a href="mailto:ntruminator@gmail.com" target="_blank">ntruminator@gmail.com</a>.
+            </p>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
         <div class="button-set">
           <button class="button-set-button" data-micromodal-trigger="ai-modal">
             Collective Intelligence
@@ -47,7 +137,7 @@
         </div>
       </section>
 
-      <div id="contribute" class="full-page info-section center">
+      <div id="contribute" class="full-page info-section center column">
         <h2>
           Get Involved
         </h2>
@@ -70,11 +160,11 @@
 
 
     <div class="modal micromodal-slide" id="ai-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h2>
               ARTIFICIAL INTELLIGENCE VERSUS COLLECTIVE INTELLIGENCE
             </h2>
@@ -108,11 +198,11 @@
 
 
     <div class="modal micromodal-slide" id="technology-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h2>
               THE FACILITATION TECHNOLOGIES
             </h2>
@@ -166,11 +256,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="cf-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Conventional (but updated) Facilitation
             </h3>
@@ -216,11 +306,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="ogd-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Online Group Dialogue
             </h3>
@@ -249,11 +339,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="dm-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Dialogue Mapping
             </h3>
@@ -285,11 +375,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="gic-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Group Intelligence Optimizing
             </h3>
@@ -330,11 +420,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="spr-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Systems and Process Reasoning
             </h3>
@@ -371,11 +461,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="cd-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Conceptual Defragmentation
             </h3>
@@ -402,11 +492,11 @@
 
 
     <div class="modal micromodal-slide" id="dce-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h2>
               THE BASIC WORKINGS OF THE DIALOGUE CONVERGENCE ENGINE
             </h2>
@@ -428,11 +518,11 @@
 
 
     <div class="modal micromodal-slide" id="roles-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h2>
               Personnel Roles
             </h2>
@@ -472,11 +562,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="case-managers-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Case Managers
             </h3>
@@ -491,11 +581,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="facilitators-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Facilitators
             </h3>
@@ -510,11 +600,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="presenters-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Presenters
             </h3>
@@ -529,11 +619,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="commentators-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Commentators
             </h3>
@@ -547,11 +637,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="referees-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Referees
             </h3>
@@ -565,11 +655,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="position-teams-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Position Teams
             </h3>
@@ -588,11 +678,11 @@
     </div>
 
     <div class="modal micromodal-slide" id="idea-hunters-modal" aria-hidden="true">
-      <div class="modal-overlay center" tabindex="-1" data-micromodal-close>
+      <div class="modal-overlay center column" tabindex="-1" data-micromodal-close>
         <div class="modal-container" role="dialog" aria-modal="true">
           <button class="modal-close" aria-label="Close modal" data-micromodal-close>&#x2715;</button>
 
-          <section class="modal-content">
+          <section class="modal-content column">
             <h3>
               Idea Hunters
             </h3>

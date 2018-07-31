@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body, div, section, header, main {
-  display: flex;
-  flex-direction: column;
-}
-
 p {
   font-size: 1.20em;
   line-height: 1.75em;
@@ -21,30 +16,6 @@ blockquote {
   background-color: #eee;
   color: #555;
   padding: 24px;
-}
-
-.full-page {
-  min-height: 100vh;
-}
-
-.center {
-  align-items: center;
-  justify-content: center;
-}
-
-.info-section {
-  text-align: center;
-}
-
-.info-section h2 {
-}
-
-.info-section p {
-  color: #333;
-}
-
-.info-section > * {
-  margin: 16px;
 }
 
 #title-card {
@@ -71,7 +42,7 @@ blockquote {
 
 #about {
   background-color: white;
-  padding: 36px 20%;
+  padding: 50px 20%;
 }
 
 #contribute {
@@ -83,6 +54,33 @@ blockquote {
   position: absolute;
   margin: 0px;
   bottom: 0;
+  max-width: 100%;
+}
+
+.full-page {
+  min-height: 100vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.info-section {
+  text-align: center;
+}
+
+.info-section p {
+  color: #333;
+}
+
+.info-section > * {
+  margin: 16px;
 }
 
 
@@ -102,6 +100,7 @@ blockquote {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .modal-container {
@@ -129,6 +128,7 @@ blockquote {
 
 .modal-content img {
   margin: auto;
+  max-width: 100%;
 }
 
 .modal-close {
@@ -165,4 +165,18 @@ blockquote {
 .button-set-button:hover {
   background-color: #cff;
   cursor: pointer;
+}
+
+
+/* Carousel */
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  padding: 60px;
+}
+
+.swiper-slide > p {
+  font-size: 24px;
 }
